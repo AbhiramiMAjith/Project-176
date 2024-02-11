@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mad Libs</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="button.js"></script>
+    <script src="index.js"></script>
+    <script rel="stylesheet" href="index.css"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center p-5">
+                <h1 id="title" class="display_inline">GUESS ME!</h1>
+                <h3 id="sub_title" class="display_inline">Click on the alphabets to guess the word</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12 text-center" id="alphabets">
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12 text-center">
+                    <span>Remaining Life:</span>
+                    <span id="life">5</span>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-12 text-center">
+                    <span>Hint: Category is</span>
+                    <span id="hint"></span>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-12 text-center">
+                    <p id="blanks">_</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
